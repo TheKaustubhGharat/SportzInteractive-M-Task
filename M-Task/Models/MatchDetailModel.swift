@@ -7,7 +7,7 @@
 
 import Foundation
 // MARK: - Modal
-struct Modal: Codable {
+struct ResponseModal: Codable {
     let matchdetail: Matchdetail?
     let nuggets: [String]?
     let innings: [Inning]?

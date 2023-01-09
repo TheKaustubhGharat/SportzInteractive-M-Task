@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5DCBC87F296BD86900978A80 /* PlayersDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCBC87E296BD86900978A80 /* PlayersDetailVC.swift */; };
 		846DE81729647A7B003A83DD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846DE81629647A7B003A83DD /* AppDelegate.swift */; };
 		846DE81929647A7B003A83DD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846DE81829647A7B003A83DD /* SceneDelegate.swift */; };
 		846DE81B29647A7B003A83DD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846DE81A29647A7B003A83DD /* ViewController.swift */; };
@@ -14,9 +15,15 @@
 		846DE82029647A7E003A83DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 846DE81F29647A7E003A83DD /* Assets.xcassets */; };
 		846DE82329647A7E003A83DD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 846DE82129647A7E003A83DD /* LaunchScreen.storyboard */; };
 		846DE82B29648494003A83DD /* MatchDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846DE82A29648494003A83DD /* MatchDetailModel.swift */; };
+		846DE834296ACD14003A83DD /* MatchDetailsTBVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846DE832296ACD14003A83DD /* MatchDetailsTBVC.swift */; };
+		846DE835296ACD14003A83DD /* MatchDetailsTBVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 846DE833296ACD14003A83DD /* MatchDetailsTBVC.xib */; };
+		846DE837296B1351003A83DD /* SecondVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846DE836296B1351003A83DD /* SecondVC.swift */; };
+		846DE83A296B52CE003A83DD /* PlayersTBVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846DE838296B52CE003A83DD /* PlayersTBVC.swift */; };
+		846DE83B296B52CE003A83DD /* PlayersTBVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 846DE839296B52CE003A83DD /* PlayersTBVC.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5DCBC87E296BD86900978A80 /* PlayersDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayersDetailVC.swift; sourceTree = "<group>"; };
 		846DE81329647A7B003A83DD /* M-Task.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "M-Task.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		846DE81629647A7B003A83DD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		846DE81829647A7B003A83DD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +33,11 @@
 		846DE82229647A7E003A83DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		846DE82429647A7E003A83DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		846DE82A29648494003A83DD /* MatchDetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchDetailModel.swift; sourceTree = "<group>"; };
+		846DE832296ACD14003A83DD /* MatchDetailsTBVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchDetailsTBVC.swift; sourceTree = "<group>"; };
+		846DE833296ACD14003A83DD /* MatchDetailsTBVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MatchDetailsTBVC.xib; sourceTree = "<group>"; };
+		846DE836296B1351003A83DD /* SecondVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SecondVC.swift; path = "M-Task/Controllers/SecondVC.swift"; sourceTree = SOURCE_ROOT; };
+		846DE838296B52CE003A83DD /* PlayersTBVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PlayersTBVC.swift; path = "M-Task/Xibs/PlayersTBVC.swift"; sourceTree = SOURCE_ROOT; };
+		846DE839296B52CE003A83DD /* PlayersTBVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = PlayersTBVC.xib; path = "M-Task/Xibs/PlayersTBVC.xib"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +70,62 @@
 		846DE81529647A7B003A83DD /* M-Task */ = {
 			isa = PBXGroup;
 			children = (
+				846DE831296AC4B6003A83DD /* Controllers */,
+				846DE830296AC4A8003A83DD /* View */,
+				846DE82F296AC468003A83DD /* Models */,
+				846DE82E296AC43E003A83DD /* SupportingFiles */,
+				846DE82C296AC3FC003A83DD /* Xibs */,
+			);
+			path = "M-Task";
+			sourceTree = "<group>";
+		};
+		846DE82C296AC3FC003A83DD /* Xibs */ = {
+			isa = PBXGroup;
+			children = (
+				846DE838296B52CE003A83DD /* PlayersTBVC.swift */,
+				846DE839296B52CE003A83DD /* PlayersTBVC.xib */,
+				846DE832296ACD14003A83DD /* MatchDetailsTBVC.swift */,
+				846DE833296ACD14003A83DD /* MatchDetailsTBVC.xib */,
+			);
+			path = Xibs;
+			sourceTree = "<group>";
+		};
+		846DE82E296AC43E003A83DD /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
 				846DE81629647A7B003A83DD /* AppDelegate.swift */,
 				846DE81829647A7B003A83DD /* SceneDelegate.swift */,
-				846DE81A29647A7B003A83DD /* ViewController.swift */,
-				846DE81C29647A7B003A83DD /* Main.storyboard */,
 				846DE81F29647A7E003A83DD /* Assets.xcassets */,
 				846DE82129647A7E003A83DD /* LaunchScreen.storyboard */,
 				846DE82429647A7E003A83DD /* Info.plist */,
+			);
+			name = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		846DE82F296AC468003A83DD /* Models */ = {
+			isa = PBXGroup;
+			children = (
 				846DE82A29648494003A83DD /* MatchDetailModel.swift */,
 			);
-			path = "M-Task";
+			path = Models;
+			sourceTree = "<group>";
+		};
+		846DE830296AC4A8003A83DD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				846DE81C29647A7B003A83DD /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		846DE831296AC4B6003A83DD /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				846DE81A29647A7B003A83DD /* ViewController.swift */,
+				846DE836296B1351003A83DD /* SecondVC.swift */,
+				5DCBC87E296BD86900978A80 /* PlayersDetailVC.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -131,6 +189,8 @@
 				846DE82329647A7E003A83DD /* LaunchScreen.storyboard in Resources */,
 				846DE82029647A7E003A83DD /* Assets.xcassets in Resources */,
 				846DE81E29647A7B003A83DD /* Main.storyboard in Resources */,
+				846DE83B296B52CE003A83DD /* PlayersTBVC.xib in Resources */,
+				846DE835296ACD14003A83DD /* MatchDetailsTBVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,9 +201,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				846DE83A296B52CE003A83DD /* PlayersTBVC.swift in Sources */,
+				846DE834296ACD14003A83DD /* MatchDetailsTBVC.swift in Sources */,
 				846DE81B29647A7B003A83DD /* ViewController.swift in Sources */,
 				846DE81729647A7B003A83DD /* AppDelegate.swift in Sources */,
+				5DCBC87F296BD86900978A80 /* PlayersDetailVC.swift in Sources */,
 				846DE82B29648494003A83DD /* MatchDetailModel.swift in Sources */,
+				846DE837296B1351003A83DD /* SecondVC.swift in Sources */,
 				846DE81929647A7B003A83DD /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -289,9 +353,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 8664BTWY5Q;
+				DEVELOPMENT_TEAM = 7N4G37FY6H;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "M-Task/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -306,6 +371,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.kaus.M-Task";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -317,9 +383,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 8664BTWY5Q;
+				DEVELOPMENT_TEAM = 7N4G37FY6H;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "M-Task/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -334,6 +401,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.kaus.M-Task";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
